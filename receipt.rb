@@ -1,4 +1,4 @@
-# Jaron Desharnais U0
+# Jaron Desharnais U0 part 1
 sub_total = 30
 GST = 5
 PST = 7

@@ -1,5 +1,6 @@
-# Jaron Desharnais U0 part 2
-sub_total = 10
+# Jaron Desharnais U0
+puts"Enter your Subtotal: "
+sub_total = gets.to_i
 GST = 5
 PST = 7
 
@@ -28,8 +29,7 @@ def get_grand_total(sub_total)
     puts "GST: $#{gst_dollar_amount} - #{GST}%"
     puts "Grand Total: $#{grand_total}"
     puts message
-
-
+    
 end
 
 get_grand_total(sub_total)
