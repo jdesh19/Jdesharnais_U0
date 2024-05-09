@@ -1,6 +1,6 @@
 # Jaron Desharnais U0 part 3
 puts"Enter your Subtotal: "
-sub_total = gets.to_f
+sub_total = gets.chomp.to_f
 
 
 GST = 5
@@ -8,7 +8,6 @@ PST = 7
 
 def get_grand_total(sub_total)
     
-
     pst_dollar_amount = (PST * sub_total) / 100.0
     gst_dollar_amount = (GST * sub_total) / 100.0
 
@@ -34,9 +33,5 @@ def get_grand_total(sub_total)
 
 end
 
-if sub_total == 0 
-    puts "Please enter a number for the Subtotal"
-    sub_total = gets.to_f
-end
 
 get_grand_total(sub_total)
